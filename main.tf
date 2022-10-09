@@ -12,7 +12,8 @@ resource "aws_instance" "Udacity_t2s" {
   subnet_id = "subnet-0242abe8be2ce7d2c"
   instance_type = "t2.micro"
   tags = {
-    name = "Udacity T2"
+    name = "Udacity T2",
+    Name = "Udacity_t2-${count.index +1}"
   }
 }
 
