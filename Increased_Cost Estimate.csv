@@ -1,0 +1,25 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),ELB,Application Load Balancer,0,44.53,534.36,USD,Number of Application Load Balancers (2)
+My Estimate,US East (Ohio),VPC + Nat Gateway,Network Address Translation (NAT) Gateway,0,35.1,421.2,USD,Number of NAT Gateways (1)
+My Estimate,US East (Ohio),CloudFront,Amazon CloudFront,0,8775.2,105302.4,USD,"Data transfer out to internet (100000 GB per month), Data transfer out to origin (80000 GB per month), Number of requests (HTTPS) (100000000 per month)"
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",S3 Standard,0,1591.2,19094.4,USD,S3 Standard storage (70000 GB per month)
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",S3 Standard - Infrequent Access,0,625,7500,USD,S3 Standard-IA storage (50000 GB per month)
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",S3 Glacier Deep Archive,0,40.13,481.56,USD,"S3 Glacier Deep Archive Average Object Size (16 MB), S3 Glacier Deep Archive storage (40000 GB per month)"
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",S3 Glacier Instant Retrieval,0,120,1440,USD,S3 Glacier Instant Retrieval storage (30000 GB per month)
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",Data Transfer,0,61.44,737.28,USD,"DT Inbound: Internet (1 TB per month), DT Outbound: US East (N. Virginia) (6 TB per month)"
+My Estimate,US East (Ohio),Web servers,Amazon EC2,0,1914.42,22973.04,USD,"Operating system (Linux), Quantity (20), Pricing strategy (On-Demand Instances), Storage amount (100 GB), Instance type (t3.medium), Provisioning IOPS io2 (1000)"
+My Estimate,US East (Ohio),App Servers,Amazon EC2,0,1957.84,23494.08,USD,"Operating system (Linux), Quantity (20), Pricing strategy (On-Demand Instances), Storage amount (100 GB), Instance type (m5a.xlarge)"
+My Estimate,US East (Ohio),Database servers,Amazon EC2,0,3041.95,36503.4,USD,"Operating system (Linux), Quantity (4), Pricing strategy (On-Demand Instances), Storage amount (99 GB), Instance type (m5.xlarge), Provisioning IOPS io2 (10000)"
+My Estimate,US East (Ohio),Route 53,Amazon Route 53,0,7.15,85.8,USD,"Hosted Zones (1), Additional Records in Hosted Zones (100)"
+My Estimate,US East (Ohio),Elastic IP,Amazon Elastic IP,0,10.13,121.56,USD,"Number of EC2 instances (1), Number of EIPs per instance (1), Number of EIP remaps (100)"
+My Estimate,US East (Ohio),DB backup,S3 Standard - Infrequent Access,0,0,0,USD,
+My Estimate,US East (Ohio),DB backup,S3 Glacier Instant Retrieval,0,200,2400,USD,S3 Glacier Instant Retrieval storage (50000 GB per month)
+My Estimate,US East (Ohio),DB backup,Data Transfer,0,0,0,USD,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+,,,,,,,,
+"With the increased budget I have added more number of web servers, app servers for redundecy as well as better DB servers with more provisioned IOPS and SSD space. I also added increased CloudFront distribution in another nearby region as well as web, app and DB stack for redundancy across regions. Also CloudFront distrubution is configured for more data with more outbound capacity.",,,,,,,,

@@ -1,14 +1,20 @@
 ﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
-My Estimate,US East (N. Virginia),VPC wth NAT GW,Network Address Translation (NAT) Gateway,0,35.1,421.20,USD,Number of NAT Gateways (1)
-My Estimate,US East (N. Virginia),CloudFront,Amazon CloudFront,0,5056.2,60674.40,USD,"Data transfer out to internet (50000 GB per month), Number of requests (HTTPS) (5000000 per month), Data transfer out to origin (50000 GB per month)"
-My Estimate,US East (N. Virginia),Web servers,Amazon EC2,0,132.32,1587.84,USD,"Operating system (Linux), Quantity (6), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t3.medium)"
-My Estimate,US East (N. Virginia),App Servers,Amazon EC2,0,88.21,1058.52,USD,"Operating system (Linux), Quantity (4), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t3.medium)"
-My Estimate,US East (N. Virginia),Database servers ,Amazon EC2,0,140.4,1684.80,USD,"Operating system (Linux), Quantity (3), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (m5.large)"
-My Estimate,US East (N. Virginia),ALB,Application Load Balancer,0,44.53,534.36,USD,Number of Application Load Balancers (2)
-My Estimate,US East (N. Virginia),S3,S3 Standard,0,1285.27,15423.24,USD,S3 Standard storage (50000 GB per month)
-My Estimate,US East (N. Virginia),S3,S3 Standard - Infrequent Access,0,1126.05,13512.60,USD,S3 Standard-IA storage (50000 GB per month)
-My Estimate,US East (N. Virginia),S3,S3 Glacier Deep Archive,0,50.16,601.92,USD,"S3 Glacier Deep Archive Average Object Size (16 MB), S3 Glacier Deep Archive storage (50000 GB per month)"
-My Estimate,US East (N. Virginia),S3,Data Transfer,0,0,0.00,USD,"DT Inbound: Internet (50000 GB per month), DT Outbound: Amazon CloudFront (50000 GB per month)"
+My Estimate,US East (Ohio),ELB,Application Load Balancer,0,44.53,534.36,USD,Number of Application Load Balancers (2)
+My Estimate,US East (Ohio),VPC + Nat Gateway,Network Address Translation (NAT) Gateway,0,35.1,421.20,USD,Number of NAT Gateways (1)
+My Estimate,US East (Ohio),CloudFront,Amazon CloudFront,0,6280.2,75362.40,USD,"Data transfer out to internet (70000 GB per month), Data transfer out to origin (50000 GB per month), Number of requests (HTTPS) (5000000 per month)"
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",S3 Standard,0,1150,13800.00,USD,S3 Standard storage (50000 GB per month)
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",S3 Standard - Infrequent Access,0,625,7500.00,USD,S3 Standard-IA storage (50000 GB per month)
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",S3 Glacier Deep Archive,0,50.16,601.92,USD,"S3 Glacier Deep Archive Average Object Size (16 MB), S3 Glacier Deep Archive storage (50000 GB per month)"
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",S3 Glacier Instant Retrieval,0,200,2400.00,USD,S3 Glacier Instant Retrieval storage (50000 GB per month)
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",Data Transfer,0,61.44,737.28,USD,"DT Inbound: Internet (1 TB per month), DT Outbound: US East (N. Virginia) (6 TB per month)"
+My Estimate,US East (Ohio),Web servers,Amazon EC2,0,132.32,1587.84,USD,"Operating system (Linux), Quantity (6), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t3.medium)"
+My Estimate,US East (Ohio),App Servers,Amazon EC2,0,88.21,1058.52,USD,"Operating system (Linux), Quantity (4), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t3.medium)"
+My Estimate,US East (Ohio),Database servers,Amazon EC2,0,140.4,1684.80,USD,"Operating system (Linux), Quantity (3), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (m5.large)"
+My Estimate,US East (Ohio),Route 53,Amazon Route 53,0,7.15,85.80,USD,"Hosted Zones (1), Additional Records in Hosted Zones (100)"
+My Estimate,US East (Ohio),Elastic IP,Amazon Elastic IP,0,10.13,121.56,USD,"Number of EC2 instances (1), Number of EIPs per instance (1), Number of EIP remaps (100)"
+My Estimate,US East (Ohio),DB backup,S3 Standard - Infrequent Access,0,0,0.00,USD,
+My Estimate,US East (Ohio),DB backup,S3 Glacier Instant Retrieval,0,200,2400.00,USD,S3 Glacier Instant Retrieval storage (50000 GB per month)
+My Estimate,US East (Ohio),DB backup,Data Transfer,0,0,0.00,USD,
 
 
 

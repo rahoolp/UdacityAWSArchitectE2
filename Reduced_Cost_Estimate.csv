@@ -1,0 +1,25 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),ELB,Application Load Balancer,0,44.53,534.36,USD,Number of Application Load Balancers (2)
+My Estimate,US East (Ohio),VPC + Nat Gateway,Network Address Translation (NAT) Gateway,0,35.1,421.2,USD,Number of NAT Gateways (1)
+My Estimate,US East (Ohio),CloudFront,Amazon CloudFront,0,3656.2,43874.4,USD,"Data transfer out to internet (40000 GB per month), Data transfer out to origin (20000 GB per month), Number of requests (HTTPS) (5000000 per month)"
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",S3 Standard,0,920,11040,USD,S3 Standard storage (40000 GB per month)
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",S3 Standard - Infrequent Access,0,500,6000,USD,S3 Standard-IA storage (40000 GB per month)
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",S3 Glacier Deep Archive,0,40.13,481.56,USD,"S3 Glacier Deep Archive Average Object Size (16 MB), S3 Glacier Deep Archive storage (40000 GB per month)"
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",S3 Glacier Instant Retrieval,0,120,1440,USD,S3 Glacier Instant Retrieval storage (30000 GB per month)
+My Estimate,US East (Ohio),"S3 Standard IA, Glacier",Data Transfer,0,61.44,737.28,USD,"DT Inbound: Internet (1 TB per month), DT Outbound: US East (N. Virginia) (6 TB per month)"
+My Estimate,US East (Ohio),Web servers,Amazon EC2,0,132.32,1587.84,USD,"Operating system (Linux), Quantity (6), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t3.medium)"
+My Estimate,US East (Ohio),App Servers,Amazon EC2,0,29.23,350.76,USD,"Operating system (Linux), Quantity (4), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t3a.micro)"
+My Estimate,US East (Ohio),Database servers,Amazon EC2,0,140.4,1684.8,USD,"Operating system (Linux), Quantity (3), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (m5.large)"
+My Estimate,US East (Ohio),Route 53,Amazon Route 53,0,7.15,85.8,USD,"Hosted Zones (1), Additional Records in Hosted Zones (100)"
+My Estimate,US East (Ohio),Elastic IP,Amazon Elastic IP,0,10.13,121.56,USD,"Number of EC2 instances (1), Number of EIPs per instance (1), Number of EIP remaps (100)"
+My Estimate,US East (Ohio),DB backup,S3 Standard - Infrequent Access,0,0,0,USD,
+My Estimate,US East (Ohio),DB backup,S3 Glacier Instant Retrieval,0,200,2400,USD,S3 Glacier Instant Retrieval storage (50000 GB per month)
+My Estimate,US East (Ohio),DB backup,Data Transfer,0,0,0,USD,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Storage and content delivery being the biggest part of the cost I think we could save cost by optimizing our CloudFront estimate as well as S3 storage. Content delivery is key but by reducing data transfer out to internet by 20% we can get substantial saving as well as not composing a lot on the experience from end user's standpoint. CloudFront can still access the same amount of content from origin as and when needed. Also I see an opportunity by reducing content on normal S3 to 10000 GB (200 MB per user still) and rest to S3 standard IA for still a faster access if needed and then rolling it off to Glacier,,,,,,,,
